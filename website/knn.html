@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+	<title>SKY Investments</title>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100, 300' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<h1>SKY Investments</h1>
+
+<ul id="header">
+	<li><a href="index.html">The Idea</a></li>
+	<li><a href="linear_model.html">Linear Regression Model</a></li>
+	<li class="active"><a href="knn.html">KNN Model</a></li>
+	<li><a href="conclusions.html">Conclusions</a></li>
+	<li><a href="code.html">Code + Screencast</a></li>
+</ul>
+
+<div class="clear"></div>
+
+<div id="wrapper">
+	<h2>KNN Model</h2>
+	<p>We decided that we'd give it another shot and build a different sort of model for predicting stock movement. The basic idea was that in order to predict a certain stock's movement on a given Monday, we would look at how its stock price and Google trends looked from last week, try to find similar cases that already occurred, and then assume that our stock would perform in a fashion similar to how the similar cases played out in history.   In other words, if we imagine our Google trend and stock price input data as a curve connecting dots corresponding to the data points, we wanted to find similar-looking curves and see how the curves continued. Here is a picture of what we mean with explanation below:</p>
+
+	<img src="fig7.png"/>
+
+	<p>The red line represents what happened last week to the stock we're trying to predict and the blue lines represent similar instances in the past. The idea is that we can then predict where the red line will move on the basis of where the blue lines in fact did move. An intuitively obvious strategy, right? How could it possibly fail?</p>
+
+	<p>Unfortunately, even using this model we weren't able to predict whether a stock would rise or fall with a success rate much better than 50%.</p>
+</div>
+</body>
+</html>
