@@ -23,12 +23,13 @@ h3 {
 	text-transform: uppercase;
 }
 p {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.4em;
 }
 #wrapper {
 	width: 900px;
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
 img {
 	display: block;
@@ -44,7 +45,7 @@ img {
 #header {
 	list-style-type: none;
 	margin: 0 auto;
-	width: 1000px;
+	width: 930px;
 }
 #header li {
 	float: left;
